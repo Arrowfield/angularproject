@@ -1,0 +1,2 @@
+# angularproject
+基于angular框架和ionic第三方的UI库构建的移动端项目
