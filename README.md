@@ -3,3 +3,4 @@
 + 基于angular框架和ionic第三方的UI库构建的移动端项目
 + 启动：npm install->npm start
 + 个人博客系统
++ 使用的是Ionic的版本是3.0

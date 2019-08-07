@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {MyHttpService} from '../../service/myhttp.service';
+//import {MyHttpService} from '../../service/myhttp.service';
 import{DetailPage} from '../detail/detail'
 
 /**
@@ -21,7 +21,7 @@ export class IndexPage {
   recommendedItems = []
   detail = DetailPage;
   constructor(
-    private myHttp:MyHttpService,
+    //private myHttp:MyHttpService,
     public navCtrl: NavController, 
     public navParams: NavParams) {
   }
