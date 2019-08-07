@@ -4,6 +4,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import {HttpClientModule} from '@angular/common/http';//发送网络请求模块依赖
 
+//组件模块
 import { ComponentsModule } from '../components/components.module'
 
 import { MyApp } from './app.component';

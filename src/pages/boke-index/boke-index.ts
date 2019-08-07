@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
-
+import { MyHttpService } from '../../service/myhttp.service'
 /**
  * Generated class for the BokeIndexPage page.
  *
@@ -17,11 +17,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class BokeIndexPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private http:MyHttpService) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BokeIndexPage');
+    //console.log('ionViewDidLoad BokeIndexPage');
+    this.http.sendRequest('//',(res) =>{
+      //console.log(res)
+    })
   }
+
+
 
 }
