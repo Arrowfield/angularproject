@@ -23,8 +23,8 @@ export class BokeIndexPage {
 
   ionViewDidLoad() {
     //console.log('ionViewDidLoad BokeIndexPage');
-    this.http.sendRequest('//',(res) =>{
-      //console.log(res)
+    this.http.sendRequest('/index',(res) =>{
+      console.log(res)
     })
   }
 

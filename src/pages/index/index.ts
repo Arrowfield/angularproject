@@ -29,15 +29,6 @@ export class IndexPage {
   ionViewDidLoad() {
     //console.log('ionViewDidLoad IndexPage');
     //发起网络请求
-<<<<<<< HEAD
-    var url = "/product/index.php"
-    this.myHttp.sendRequest(url,(result)=>{
-      this.carouselItems = result.carouselItems;
-      this.newArrivalItems = result.newArrivalItems;
-      this.recommendedItems = result.recommendedItems;
-      console.log(result);
-    })
-=======
     //var url = "http://localhost:8090/framework/forStu/ajia_code/data/product/index.php"
     // this.myHttp.sendRequest(url,(result)=>{
     //   this.carouselItems = result.carouselItems;
@@ -45,7 +36,6 @@ export class IndexPage {
     //   this.recommendedItems = result.recommendedItems;
     //   console.log(result);
     // })
->>>>>>> 80121280a95f5bb192ec1fdf255a6f02b7cd92a2
   }
 
 }

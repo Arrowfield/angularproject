@@ -5,7 +5,7 @@ import {LoadingController,ToastController} from 'ionic-angular'
 @Injectable()//不需要参数
 export class MyHttpService{
 
-  private baseUrl:string = "http://127.0.0.1:7001"
+  private baseUrl:string = "http://127.0.0.1:7001/api"
   constructor(
     private toastCtrl:ToastController,//既声明又赋值
     private myHttp:HttpClient,
@@ -19,7 +19,7 @@ export class MyHttpService{
   }
 
   sendRequest(url,func){
-    var baseUrl = "http://admin.plus.com"
+
     //实现一个loading
     // var myLoading = this.loadingCtrl.create({
     //   content:"正在加载..."
@@ -27,11 +27,7 @@ export class MyHttpService{
 
     //myLoading.present()
     //发请求
-<<<<<<< HEAD:src/app/utility/service/myhttp.service.ts
-    this.myHttp.get(baseUrl+url,{withCredentials:true}).subscribe((result)=>{
-=======
-    this.myHttp.get(this.baseUrl + url,{withCredentials:true}).subscribe((result)=>{
->>>>>>> 80121280a95f5bb192ec1fdf255a6f02b7cd92a2:src/service/myhttp.service.ts
+    this.myHttp.get(this.baseUrl + url,{withCredentials:false}).subscribe((result)=>{
       //请求完之后关闭loading
       //myLoading.dismiss()
       //执行第二个参数指定的方法
