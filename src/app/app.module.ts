@@ -4,6 +4,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import {HttpClientModule} from '@angular/common/http';//发送网络请求模块依赖
 
+import { ComponentsModule } from '../components/components.module'
+
 import { MyApp } from './app.component';
 
 
@@ -25,7 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MyHttpService } from '../service/myhttp.service';
 //装饰器
 @NgModule({
-  declarations: [
+  declarations: [//导入page
     MyApp,
     //HomePage,
     //ListPage,
@@ -39,13 +41,15 @@ import { MyHttpService } from '../service/myhttp.service';
     // UserCenterPage
     BokeIndexPage
   ],
-  imports: [
+  imports: [//导入模块
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
+  
+  entryComponents: [//声明page
     MyApp,
     //HomePage,
     //ListPage,
