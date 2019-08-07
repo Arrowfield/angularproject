@@ -1,4 +1,4 @@
-import{MyHttpService} from '../../app/utility/service/myhttp.Service';
+import{MyHttpService} from '../../service/myhttp.service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -27,6 +27,7 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
     //console.log(this.myHttp);
   }
+  
   handleClick(){
     var args = "uname="+this.myName+"&upwd="+this.myPwd
     var url = "http://localhost:8090/framework/forStu/ajia_code/data/user/login.php?"+args;

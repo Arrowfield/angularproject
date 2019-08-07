@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController,IonicPage, NavController, NavParams } from 'ionic-angular';
-import {MyHttpService} from '../../app/utility/service/myhttp.Service';
+import {MyHttpService} from '../../service/myhttp.service';
 import{PayPage} from '../pay/pay';
 
 /**

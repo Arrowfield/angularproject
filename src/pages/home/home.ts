@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 import {IndexPage} from '../index/index'
+
 import {CartPage} from '../cart/cart'
 import {UserCenterPage} from '../user-center/user-center'
 import {NotFoundPage} from '../not-found/not-found'
@@ -22,6 +24,7 @@ export class HomePage {
   tabCart = CartPage
   tabPerson = UserCenterPage
   tabSettings = NotFoundPage
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
