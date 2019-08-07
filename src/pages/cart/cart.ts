@@ -28,7 +28,7 @@ export class CartPage {
 
   ionViewWillEnter() {
     console.log('ionViewWillEnter CartPage');
-    var url = "http://localhost:8090/framework/forStu/ajia_code/data/cart/list.php"
+    var url = "/cart/list.php"
     this.myService.sendRequest(url,(result)=>{
      console.log(result);
     if(result.code == 200){

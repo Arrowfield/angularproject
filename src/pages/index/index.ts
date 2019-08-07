@@ -27,9 +27,9 @@ export class IndexPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IndexPage');
+    //console.log('ionViewDidLoad IndexPage');
     //发起网络请求
-    var url = "http://localhost:8090/framework/forStu/ajia_code/data/product/index.php"
+    var url = "/product/index.php"
     this.myHttp.sendRequest(url,(result)=>{
       this.carouselItems = result.carouselItems;
       this.newArrivalItems = result.newArrivalItems;
