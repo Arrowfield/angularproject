@@ -7,11 +7,11 @@ import {HttpClientModule} from '@angular/common/http';//发送网络请求模块
 import { MyApp } from './app.component';
 
 
-//import { HomePage } from '../pages/home/home';
-//import { ListPage } from '../pages/list/list';
+import { HomePage } from '../pages/home/home';
+import { ListPage } from '../pages/list/list';
 //import { CartPage } from '../pages/cart/cart';
 //import { DetailPage } from '../pages/detail/detail';
-//import { IndexPage } from '../pages/index/index';
+import { IndexPage } from '../pages/index/index';
 //import { LoginPage } from '../pages/login/login';
 //import { NotFoundPage } from '../pages/not-found/not-found';
 //import { OrderConfirmPage } from '../pages/order-confirm/order-confirm';
@@ -25,11 +25,11 @@ import { MyHttpService } from '../service/myhttp.service';
 @NgModule({
   declarations: [
     MyApp,
-    // HomePage,
-    // ListPage,
+    HomePage,
+    ListPage,
     // CartPage,
     // DetailPage,
-    // IndexPage,
+    IndexPage,
     // LoginPage,
     // NotFoundPage,
     // OrderConfirmPage,
@@ -44,11 +44,11 @@ import { MyHttpService } from '../service/myhttp.service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    // HomePage,
-    // ListPage,
+    HomePage,
+    ListPage,
     // CartPage,
     // DetailPage,
-    // IndexPage,
+    IndexPage,
     // LoginPage,
     // NotFoundPage,
     // OrderConfirmPage,
