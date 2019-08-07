@@ -5,34 +5,36 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import {HttpClientModule} from '@angular/common/http';//发送网络请求模块依赖
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { CartPage } from '../pages/cart/cart';
-import { DetailPage } from '../pages/detail/detail';
-import { IndexPage } from '../pages/index/index';
-import { LoginPage } from '../pages/login/login';
-import { NotFoundPage } from '../pages/not-found/not-found';
-import { OrderConfirmPage } from '../pages/order-confirm/order-confirm';
-import { PayPage } from '../pages/pay/pay';
-import { UserCenterPage} from '../pages/user-center/user-center';
+
+
+//import { HomePage } from '../pages/home/home';
+//import { ListPage } from '../pages/list/list';
+//import { CartPage } from '../pages/cart/cart';
+//import { DetailPage } from '../pages/detail/detail';
+//import { IndexPage } from '../pages/index/index';
+//import { LoginPage } from '../pages/login/login';
+//import { NotFoundPage } from '../pages/not-found/not-found';
+//import { OrderConfirmPage } from '../pages/order-confirm/order-confirm';
+//import { PayPage } from '../pages/pay/pay';
+//import { UserCenterPage} from '../pages/user-center/user-center';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {MyHttpService} from './utility/service/myhttp.Service';
+import { MyHttpService } from '../service/myhttp.service';
 //装饰器
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage,
-    CartPage,
-    DetailPage,
-    IndexPage,
-    LoginPage,
-    NotFoundPage,
-    OrderConfirmPage,
-    PayPage,
-    UserCenterPage
+    // HomePage,
+    // ListPage,
+    // CartPage,
+    // DetailPage,
+    // IndexPage,
+    // LoginPage,
+    // NotFoundPage,
+    // OrderConfirmPage,
+    // PayPage,
+    // UserCenterPage
   ],
   imports: [
     BrowserModule,
@@ -42,16 +44,16 @@ import {MyHttpService} from './utility/service/myhttp.Service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage,
-    CartPage,
-    DetailPage,
-    IndexPage,
-    LoginPage,
-    NotFoundPage,
-    OrderConfirmPage,
-    PayPage,
-    UserCenterPage
+    // HomePage,
+    // ListPage,
+    // CartPage,
+    // DetailPage,
+    // IndexPage,
+    // LoginPage,
+    // NotFoundPage,
+    // OrderConfirmPage,
+    // PayPage,
+    // UserCenterPage
   ],
   providers: [//提供商
     MyHttpService,
@@ -60,4 +62,5 @@ import {MyHttpService} from './utility/service/myhttp.Service';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
+
 export class AppModule {}

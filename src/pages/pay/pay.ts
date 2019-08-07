@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoadingController,ViewController,ModalController,IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LoadingController,ViewController,IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the PayPage page.
@@ -18,7 +18,7 @@ export class PayPage {
   constructor(
     private loadingCtrl: LoadingController,
     private viewCtrl: ViewController,
-    private myModal: ModalController,
+
     public navCtrl: NavController, 
     public navParams: NavParams) {
   }

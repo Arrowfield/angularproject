@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,ToastController } from 'ionic-angular';
-import {MyHttpService} from '../../app/utility/service/myhttp.Service';
+import {MyHttpService} from '../../service/myhttp.service';
 import {CartPage} from '../cart/cart';
 import {NotFoundPage} from '../not-found/not-found';
 import { LoginPage } from '../login/login';

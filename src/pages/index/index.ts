@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {MyHttpService} from '../../app/utility/service/myhttp.Service';
+import {MyHttpService} from '../../service/myhttp.service';
 import{DetailPage} from '../detail/detail'
 
 /**
