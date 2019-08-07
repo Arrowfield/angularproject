@@ -18,10 +18,10 @@
   // opacity: .5;
 }
 
-ion-img img{height: 100%;}
+ion-img img{height: 100%;width: 100%;}
 
 .article{
-  margin-bottom:40px;
+  
 }
 .article-detail {
   border:1px solid #ddd;
@@ -45,7 +45,7 @@ ion-img img{height: 100%;}
   letter-spacing: 2px;
 }
 
-.article{padding:35px 15px 0;}
+.article{padding:0 15px ;margin:35px 0;}
 
 .carousel-content p{
   margin-top:60px;
