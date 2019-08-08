@@ -24,7 +24,9 @@ export class BokeIndexPage {
   ionViewDidLoad() {
     //console.log('ionViewDidLoad BokeIndexPage');
     this.http.sendRequest('/index',(res) =>{
-      console.log(res)
+      //console.log(res.indexOf('filed'))
+      var res =  JSON.parse(res.slice(0,res.indexOf('filed')))
+      //console.log(res)
     })
   }
 

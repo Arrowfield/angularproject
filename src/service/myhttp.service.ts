@@ -27,7 +27,7 @@ export class MyHttpService{
 
     //myLoading.present()
     //发请求
-    this.myHttp.get(this.baseUrl + url,{withCredentials:false}).subscribe((result)=>{
+    this.myHttp.get(this.baseUrl + url,{responseType:"text",withCredentials:false}).subscribe((result)=>{
       //请求完之后关闭loading
       //myLoading.dismiss()
       //执行第二个参数指定的方法
