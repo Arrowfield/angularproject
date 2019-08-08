@@ -1,3 +1,22 @@
 page-boke-mood {
+  .scroll-content{
+    background: #f8f8f8;
+  }
+}
 
+
+.mood-item{
+  padding:10px;
+  border:1px solid #ccc;
+  margin: 20px;
+  background: white;
+  border-radius: 4px;
+  p{
+    color: #999;
+    font-style: italic;
+  }
+}
+
+.divider{
+  margin-top:80px;
 }

@@ -66,6 +66,7 @@ export class MyApp {
     //this.nav.setRoot(page)
 
     this.menuCtrl.close()
+    
     switch(page.title){
       case "BokeMoodPage" : this.nav.setRoot(page.component) ; break;
       case "BokeIndexPage" : this.nav.setRoot(page.component) ; break;
