@@ -22,6 +22,8 @@ import { MyApp } from './app.component';
 //import { UserCenterPage} from '../pages/user-center/user-center';
 
 import { BokeIndexPage } from '../pages/boke-index/boke-index'
+import { BokeMoodPage } from '../pages/boke-mood/boke-mood'
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -40,7 +42,8 @@ import { MyHttpService } from '../service/myhttp.service';
     // OrderConfirmPage,
     // PayPage,
     // UserCenterPage
-    BokeIndexPage
+    BokeIndexPage,
+    BokeMoodPage
   ],
   imports: [//导入模块
     BrowserModule,
@@ -62,7 +65,8 @@ import { MyHttpService } from '../service/myhttp.service';
     // OrderConfirmPage,
     // PayPage,
     // UserCenterPage
-    BokeIndexPage
+    BokeIndexPage,
+    BokeMoodPage
   ],
   providers: [//提供商
     MyHttpService,

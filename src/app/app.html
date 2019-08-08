@@ -9,42 +9,48 @@
 
     <ion-list class="menu-list">
 
-      <ion-item>
+      <ion-item (click)="handleClick(pages[0])"><!--传参-->
         
           <ion-icon name="home" item-start></ion-icon>首页
 
       </ion-item>
-      <ion-item>
+
+      <ion-item (click)="handleClick(pages[1])">
        
           <ion-icon name="heart" item-start></ion-icon>心情随笔
  
       </ion-item>
-      <ion-item>
+      
+      <ion-item (click)="handleClick()">
        
           <ion-icon name="leaf" item-start></ion-icon>韶华追忆
   
       </ion-item>
-      <ion-item>
+
+      <ion-item (click)="handleClick()">
         
           <ion-icon name="desktop" item-start></ion-icon>技术分享
  
       </ion-item>
-      <ion-item>
+
+      <ion-item (click)="handleClick()">
       
           <ion-icon name="folder" item-start></ion-icon>个人归档
        
       </ion-item>
-      <ion-item>
+      <ion-item (click)="handleClick()">
        
           <ion-icon name="book" item-start></ion-icon>书屋
      
       </ion-item>
-      <ion-item>
+      <ion-item (click)="handleClick()">
         <ion-icon name="mail-open" item-start></ion-icon>Blog留言
       </ion-item>
-      <ion-item>
+
+      <ion-item (click)="handleClick()">
         <ion-icon name="man" item-start></ion-icon>关于我
       </ion-item>
+
     </ion-list>
 
   </ion-content>
@@ -65,7 +71,10 @@
 </ion-header>
 
 
-
+<!--
+  /
+  /mood/index
+-->
 
 
 
