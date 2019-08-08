@@ -22,4 +22,13 @@ export class BokeMoodPage {
     console.log('ionViewDidLoad BokeMoodPage');
   }
 
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      refresher.complete()
+    }, 2000);
+  }
+
 }
