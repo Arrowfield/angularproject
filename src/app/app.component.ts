@@ -87,6 +87,7 @@ export class MyApp {
     switch(page.title){
       case "BokeMoodPage" : this.nav.setRoot(page.component) ; break;
       case "BokeIndexPage" : this.nav.setRoot(page.component) ; break;
+      case "BokeMemoryPage" : this.nav.setRoot(page.component) ; break;
       default : return false;
     }
   }
