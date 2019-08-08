@@ -19,6 +19,7 @@ export class MyHttpService{
   }
 
   sendRequest(url,func){
+
     //实现一个loading
     // var myLoading = this.loadingCtrl.create({
     //   content:"正在加载..."
