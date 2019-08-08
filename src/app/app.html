@@ -1,10 +1,18 @@
+<ion-menu [content]="content">
 
-<ion-menu [content]="content" >
-  
+  <ion-content style="background: #222;">
+    <div class="menu-top">
+      <ion-img src="../assets/imgs/profile.jpg" style="width:80px;height:80px;"></ion-img>
+      <p>且听风吟</p>
+      <p>程序员一枚</p>
+    </div>
+  </ion-content>
+
 </ion-menu>
+
 <ion-header>
   <ion-toolbar color="dark" mode="ios" style="height:50px;">
-    <button  ion-button menuToggle color='light'>
+    <button ion-button menuToggle color='light'>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title mode="ios" class="app-title">且听风吟Blog</ion-title>
@@ -20,7 +28,3 @@
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
-
-
-
-

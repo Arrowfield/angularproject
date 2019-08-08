@@ -28,7 +28,13 @@ body{
   font-size: 12px;
 }
 
-ion-menu .menu-inner{
-  //background: #222 !important;
+.menu-top{
+  text-align: center;
+  color: #fff;
+  margin: 40px 0 20px;
+  ion-img{border-radius: 50%;}
+  p{
+    line-height: 18px;
+  }
 }
 
