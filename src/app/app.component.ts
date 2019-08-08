@@ -18,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { BokeIndexPage } from '../pages/boke-index/boke-index'
 import { BokeMoodPage } from '../pages/boke-mood/boke-mood'
+import { BokeMemoryPage } from '../pages/boke-memory/boke-memory'
 import { MenuController } from 'ionic-angular'
 
 @Component({
@@ -29,7 +30,9 @@ export class MyApp {
 
   rootPage: any = BokeIndexPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any,name:string}>;
+
+  title:string = "且听风吟Bolg"
 
   constructor(public platform: Platform, 
     public statusBar: StatusBar, 
@@ -40,8 +43,16 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'BokeIndexPage', component: BokeIndexPage },
-      { title: 'BokeMoodPage', component: BokeMoodPage },
+      { 
+        title: 'BokeIndexPage', 
+        component: BokeIndexPage,
+        name:"且听风吟Bolg" 
+      },
+      { 
+        title: 'BokeMoodPage', 
+        component: BokeMoodPage ,
+        name:"心情随笔" 
+      },
     ]
 
   }
@@ -66,7 +77,8 @@ export class MyApp {
     //this.nav.setRoot(page)
 
     this.menuCtrl.close()
-    
+    this.title = page.name
+
     switch(page.title){
       case "BokeMoodPage" : this.nav.setRoot(page.component) ; break;
       case "BokeIndexPage" : this.nav.setRoot(page.component) ; break;

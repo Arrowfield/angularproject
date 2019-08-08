@@ -23,7 +23,7 @@ import { MyApp } from './app.component';
 
 import { BokeIndexPage } from '../pages/boke-index/boke-index'
 import { BokeMoodPage } from '../pages/boke-mood/boke-mood'
-
+import { BokeMemoryPage } from '../pages/boke-memory/boke-memory'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -43,7 +43,8 @@ import { MyHttpService } from '../service/myhttp.service';
     // PayPage,
     // UserCenterPage
     BokeIndexPage,
-    BokeMoodPage
+    BokeMoodPage,
+    BokeMemoryPage
   ],
   imports: [//导入模块
     BrowserModule,
@@ -66,7 +67,8 @@ import { MyHttpService } from '../service/myhttp.service';
     // PayPage,
     // UserCenterPage
     BokeIndexPage,
-    BokeMoodPage
+    BokeMoodPage,
+    BokeMemoryPage
   ],
   providers: [//提供商
     MyHttpService,
