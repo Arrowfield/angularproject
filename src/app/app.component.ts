@@ -53,6 +53,11 @@ export class MyApp {
         component: BokeMoodPage ,
         name:"心情随笔" 
       },
+      { 
+        title: 'BokeMemoryPage', 
+        component: BokeMemoryPage ,
+        name:"韶华追忆" 
+      },
     ]
 
   }
