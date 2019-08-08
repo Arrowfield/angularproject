@@ -11,10 +11,12 @@ page-boke-mood {
   margin: 20px;
   background: white;
   border-radius: 4px;
+  ion-icon{font-size: 2.2em;}
   p{
     color: #999;
     font-style: italic;
   }
+  h6{margin:0;font-size:12px;}
 }
 
 .divider{
