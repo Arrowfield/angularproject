@@ -47,12 +47,27 @@ ion-img img{height: 100%;width: 100%;}
 
 .article{padding:0 15px ;margin:35px 0;}
 
+
+.carousel-content{
+  //animation:bounceInDown 3s infinite; 
+ 
+}
+
+.bounceInDown{
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+}
+
+
 .carousel-content p{
   margin-top:60px;
   color: white;
   font-size:20px;
   font-weight: bold;
   letter-spacing: 2px;
+  
 }
 
 .article-detail p{

@@ -9,24 +9,24 @@
 
 <ion-content class="index-body">
   <div class="carousel">
-    <ion-slides pager loop autoplay="3000" effect="fade">
+    <ion-slides (ionSlideDidChange)="slideChanged()" pager loop autoplay="3000" effect="fade">
 
       <ion-slide>
         <div class="carousel-par">
           <img src="../../assets/imgs/index_carousel01.jpg" alt="">
           <div class="carousel-content">
-            <p>关于博客</p>
-            <button ion-button color="light" small>LEARN MORE</button>
+            <p [ngClass] = ' index == 1 || index == 5 ? "bounceInDown" : "" ' >关于博客</p>
+            <button [ngClass] = ' index == 1 || index == 5 ? "bounceInDown" : "" '  ion-button color="light" small>LEARN MORE</button>
           </div>
         </div>
       </ion-slide>
-
+        <!-- angualr属性绑定 -->
       <ion-slide>
         <div class="carousel-par">
           <img src="../../assets/imgs/index_carousel02.jpg" alt="">
           <div class="carousel-content">
-            <p>关于友情链接</p>
-            <button ion-button color="light" small>LEARN MORE</button>
+            <p [ngClass] = ' index == 2  ? "bounceInDown" : "" '>关于友情链接</p>
+            <button  [ngClass] = ' index == 2  ? "bounceInDown" : "" ' ion-button color="light" small>LEARN MORE</button>
           </div>
         </div>
       </ion-slide>
@@ -34,9 +34,9 @@
       <ion-slide>
         <div class="carousel-par">
           <img src="../../assets/imgs/index_carousel03.jpg" alt="">
-          <div class="carousel-content">
-            <p>关于书屋</p>
-            <button ion-button color="light" small>LEARN MORE</button>
+          <div  class="carousel-content">
+            <p  [ngClass] = ' index == 3  ? "bounceInDown" : "" '>关于书屋</p>
+            <button [ngClass] = ' index == 3  ? "bounceInDown" : "" ' ion-button color="light" small>LEARN MORE</button>
           </div>
         </div>
       </ion-slide>
@@ -44,9 +44,9 @@
       <ion-slide>
         <div class="carousel-par">
           <img src="../../assets/imgs/index_carousel04.jpg" alt="">
-          <div class="carousel-content">
-            <p>关于博主</p>
-            <button ion-button color="light" small>LEARN MORE</button>
+          <div class="carousel-content ">
+            <p [ngClass] = ' index == 4  ? "bounceInDown" : "" '>关于博主</p>
+            <button [ngClass] = ' index == 4  ? "bounceInDown" : "" ' ion-button color="light" small>LEARN MORE</button>
           </div>
         </div>
       </ion-slide>

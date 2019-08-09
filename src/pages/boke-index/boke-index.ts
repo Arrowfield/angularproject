@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { Component,ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams,Slides } from 'ionic-angular';
 
 import { MyHttpService } from '../../service/myhttp.service'
 /**
@@ -16,9 +15,13 @@ import { MyHttpService } from '../../service/myhttp.service'
   templateUrl: 'boke-index.html',
 })
 export class BokeIndexPage {
+  public index:number = 1
 
+
+  @ViewChild(Slides) slides:Slides
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private http:MyHttpService) {
+    private http:MyHttpService,
+    ) {
   }
 
   ionViewDidLoad() {
@@ -30,6 +33,9 @@ export class BokeIndexPage {
     })
   }
 
-
-
+  slideChanged(){
+    let currentIndex = this.slides.getActiveIndex()
+    
+    this.index = currentIndex
+  }
 }
