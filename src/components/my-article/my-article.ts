@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 /**
  * Generated class for the MyArticleComponent component.
@@ -12,11 +12,19 @@ import { Component } from '@angular/core';
 })
 export class MyArticleComponent {
 
-  text: string;
+  public text: string
+
+  @Input() article:any
 
   constructor() {
     console.log('Hello MyArticleComponent Component');
     this.text = 'Hello World';
+    console.log(this.article)
   }
+  
+  ionViewDidLoad(){
+    console.log(123)
+  }
+
 
 }

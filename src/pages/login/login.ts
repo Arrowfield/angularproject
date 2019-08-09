@@ -36,7 +36,7 @@ export class LoginPage {
       if(result.code == 200){
         this.navCtrl.pop()
       }else{
-        this.myService.showToast('登录失败')
+        //this.myService.showToast('登录失败')
       }
     })
   }

@@ -16,7 +16,7 @@ import { MyHttpService } from '../../service/myhttp.service'
 })
 export class BokeIndexPage {
   public index:number = 1
-
+  public article:Array<Object> = []
 
   @ViewChild(Slides) slides:Slides
   constructor(public navCtrl: NavController, public navParams: NavParams,
@@ -28,8 +28,9 @@ export class BokeIndexPage {
     //console.log('ionViewDidLoad BokeIndexPage');
     this.http.sendRequest('/index',(res) =>{
       //console.log(res.indexOf('filed'))
-      var res =  JSON.parse(res.slice(0,res.indexOf('filed')))
-      //console.log(res)
+      var res =  JSON.parse(   (res.slice( 0,res.indexOf('filed')) ) )
+      console.log(res)
+
     })
   }
 
