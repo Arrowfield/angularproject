@@ -23,7 +23,8 @@ export class MyArticleComponent {
   }
   
   ionViewDidLoad(){
-    console.log(123)
+    
+    
   }
 
 

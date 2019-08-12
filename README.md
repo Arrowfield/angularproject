@@ -8,3 +8,4 @@
 + Iconfont<https://ionicframework.com/docs/v3/ionicons/>
 + Angular<https://angular.cn/>
 + 模板语法<https://angular.cn/guide/template-syntax>
++ npm -> angular -> ionic 
