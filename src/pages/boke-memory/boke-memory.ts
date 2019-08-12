@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { MyHttpService } from '../../service/myhttp.service'
 /**
  * Generated class for the BokeMemoryPage page.
  *
@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'boke-memory.html',
 })
 export class BokeMemoryPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public article:any
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public http: MyHttpService) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BokeMemoryPage');
+    //console.log('ionViewDidLoad BokeMemoryPage');
+    this.http.sendRequest('/index',(res) =>{
+      this.article = res.res
+    })
   }
 
 }
